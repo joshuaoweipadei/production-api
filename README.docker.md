@@ -3,6 +3,7 @@
 This guide explains how to run the Production API using Docker with Neon Database for both development and production environments.
 
 ## Table of Contents
+
 - [Prerequisites](#prerequisites)
 - [Development Environment](#development-environment)
 - [Production Environment](#production-environment)
@@ -28,32 +29,36 @@ You'll need the following from your [Neon Dashboard](https://console.neon.tech):
 ## Development Environment
 
 ### Overview
+
 The development environment uses **Neon Local** - a Docker proxy that creates ephemeral database branches automatically. Each time you start the development environment, you get a fresh copy of your database.
 
 ### Setup
 
 1. **Copy and configure the development environment file:**
+
    ```bash
    cp .env.development .env.development.local
    ```
 
 2. **Edit `.env.development.local` with your Neon credentials:**
+
    ```bash
    # Required Neon credentials
    NEON_API_KEY=neon_api_xxxxxxxxxxxxx
    NEON_PROJECT_ID=proud-lab-12345678
    PARENT_BRANCH_ID=br_main_branch_id_here
-   
+
    # Optional: Customize other settings
    JWT_SECRET=your_dev_jwt_secret_here
    CORS_ORIGIN=http://localhost:3001
    ```
 
 3. **Start the development environment:**
+
    ```bash
    # Load environment variables and start services
    export $(cat .env.development.local | xargs) && docker-compose -f docker-compose.dev.yml up --build
-   
+
    # Or run in detached mode
    export $(cat .env.development.local | xargs) && docker-compose -f docker-compose.dev.yml up -d --build
    ```
@@ -86,16 +91,19 @@ docker-compose -f docker-compose.dev.yml down --rmi all -v
 ## Production Environment
 
 ### Overview
+
 The production environment connects directly to your Neon Cloud database without using Neon Local.
 
 ### Setup
 
 1. **Create production environment file:**
+
    ```bash
    cp .env.production .env.production.local
    ```
 
 2. **Edit `.env.production.local` with production values:**
+
    ```bash
    # CRITICAL: Use strong secrets in production
    NODE_ENV=production
@@ -106,19 +114,21 @@ The production environment connects directly to your Neon Cloud database without
    ```
 
 3. **Deploy to production:**
+
    ```bash
    # Load environment variables and start production services
    export $(cat .env.production.local | xargs) && docker-compose -f docker-compose.prod.yml up -d --build
    ```
 
 4. **Verify deployment:**
+
    ```bash
    # Check service status
    docker-compose -f docker-compose.prod.yml ps
-   
+
    # View logs
    docker-compose -f docker-compose.prod.yml logs -f app
-   
+
    # Test health endpoint
    curl http://localhost:3000/health
    ```
@@ -134,20 +144,24 @@ The production environment connects directly to your Neon Cloud database without
 ### Production Deployment Options
 
 #### Option 1: Single Server Deployment
+
 ```bash
 # Direct deployment on a VPS or dedicated server
 export $(cat .env.production.local | xargs) && docker-compose -f docker-compose.prod.yml up -d --build
 ```
 
 #### Option 2: With Reverse Proxy (Nginx)
+
 Uncomment the nginx service in `docker-compose.prod.yml` and add SSL certificates.
 
 #### Option 3: Container Orchestration
+
 Use the Dockerfile with Kubernetes, Docker Swarm, or cloud container services.
 
 ## Database Migrations
 
 ### Development Migrations
+
 ```bash
 # Generate migration files
 docker-compose -f docker-compose.dev.yml exec app npm run db:generate
@@ -160,6 +174,7 @@ docker-compose -f docker-compose.dev.yml exec app npm run db:studio
 ```
 
 ### Production Migrations
+
 ```bash
 # Apply migrations in production
 docker-compose -f docker-compose.prod.yml exec app npm run db:migrate
@@ -169,22 +184,23 @@ docker-compose -f docker-compose.prod.yml exec app npm run db:migrate
 
 ## Environment Variables Reference
 
-| Variable | Development | Production | Description |
-|----------|-------------|------------|-------------|
-| `NODE_ENV` | development | production | Application environment |
-| `DATABASE_URL` | Auto-set by Neon Local | Manual Neon Cloud URL | Database connection string |
-| `NEON_API_KEY` | Required | Not needed | Neon API key for Local proxy |
-| `NEON_PROJECT_ID` | Required | Not needed | Your Neon project ID |
-| `PARENT_BRANCH_ID` | Required | Not needed | Parent branch for ephemeral branches |
-| `JWT_SECRET` | Dev secret | Strong production secret | JWT signing secret |
-| `CORS_ORIGIN` | localhost:3001 | Your domain | CORS allowed origin |
-| `LOG_LEVEL` | debug | info | Logging verbosity |
+| Variable           | Development            | Production               | Description                          |
+| ------------------ | ---------------------- | ------------------------ | ------------------------------------ |
+| `NODE_ENV`         | development            | production               | Application environment              |
+| `DATABASE_URL`     | Auto-set by Neon Local | Manual Neon Cloud URL    | Database connection string           |
+| `NEON_API_KEY`     | Required               | Not needed               | Neon API key for Local proxy         |
+| `NEON_PROJECT_ID`  | Required               | Not needed               | Your Neon project ID                 |
+| `PARENT_BRANCH_ID` | Required               | Not needed               | Parent branch for ephemeral branches |
+| `JWT_SECRET`       | Dev secret             | Strong production secret | JWT signing secret                   |
+| `CORS_ORIGIN`      | localhost:3001         | Your domain              | CORS allowed origin                  |
+| `LOG_LEVEL`        | debug                  | info                     | Logging verbosity                    |
 
 ## Troubleshooting
 
 ### Common Issues
 
 #### 1. Neon Local Connection Failed
+
 ```bash
 # Check if Neon Local is healthy
 docker-compose -f docker-compose.dev.yml ps
@@ -195,6 +211,7 @@ docker-compose -f docker-compose.dev.yml logs neon-local
 ```
 
 #### 2. Permission Denied Errors
+
 ```bash
 # Fix file permissions
 sudo chown -R $USER:$USER .
@@ -202,6 +219,7 @@ chmod -R 755 .
 ```
 
 #### 3. Port Already in Use
+
 ```bash
 # Find process using port 3000
 lsof -i :3000
@@ -209,6 +227,7 @@ lsof -i :3000
 ```
 
 #### 4. Database Migration Errors
+
 ```bash
 # Reset development database (creates new ephemeral branch)
 docker-compose -f docker-compose.dev.yml down -v
@@ -218,6 +237,7 @@ docker-compose -f docker-compose.dev.yml up -d
 ```
 
 #### 5. Container Build Failures
+
 ```bash
 # Clean Docker cache and rebuild
 docker system prune -a
@@ -247,6 +267,7 @@ docker system prune
 ## Architecture Overview
 
 ### Development Architecture
+
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │   Developer     │    │   Docker Host    │    │  Neon Cloud     │
@@ -265,6 +286,7 @@ docker system prune
 ```
 
 ### Production Architecture
+
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │    Internet     │    │  Production      │    │  Neon Cloud     │
@@ -278,23 +300,25 @@ docker system prune
 
 ### Key Differences
 
-| Aspect | Development | Production |
-|--------|-------------|------------|
-| Database | Ephemeral branches via Neon Local | Direct Neon Cloud connection |
-| Data Persistence | Temporary (reset on restart) | Permanent |
-| Performance | Development optimized | Production optimized |
-| Logs | Verbose debugging | Structured info/error logs |
-| Security | Relaxed for development | Hardened for production |
-| Scaling | Single instance | Ready for horizontal scaling |
+| Aspect           | Development                       | Production                   |
+| ---------------- | --------------------------------- | ---------------------------- |
+| Database         | Ephemeral branches via Neon Local | Direct Neon Cloud connection |
+| Data Persistence | Temporary (reset on restart)      | Permanent                    |
+| Performance      | Development optimized             | Production optimized         |
+| Logs             | Verbose debugging                 | Structured info/error logs   |
+| Security         | Relaxed for development           | Hardened for production      |
+| Scaling          | Single instance                   | Ready for horizontal scaling |
 
 ## Security Considerations
 
 ### Development
+
 - Use different JWT secrets than production
 - Keep Neon credentials in `.env.development.local` (gitignored)
 - Network isolation via Docker networks
 
 ### Production
+
 - Use strong, unique JWT secrets (minimum 32 characters)
 - Never commit production secrets to version control
 - Use secrets management systems for sensitive data
@@ -312,6 +336,7 @@ docker system prune
 6. **Load Balancing**: Set up load balancers for high availability
 
 For additional help, refer to:
+
 - [Neon Documentation](https://neon.tech/docs)
 - [Docker Documentation](https://docs.docker.com)
 - [Drizzle ORM Documentation](https://orm.drizzle.team)

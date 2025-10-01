@@ -82,7 +82,7 @@ jobs:
         if: always()
         run: |
           echo "### 🧪 Test Results" >> $GITHUB_STEP_SUMMARY
-          
+
           if [ -f coverage/lcov.info ]; then
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "**Coverage Report Generated**: ✅" >> $GITHUB_STEP_SUMMARY
@@ -99,7 +99,7 @@ jobs:
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "⚠️ **No coverage report generated**" >> $GITHUB_STEP_SUMMARY
           fi
-          
+
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Test Environment:**" >> $GITHUB_STEP_SUMMARY
           echo "- Node.js: $(node --version)" >> $GITHUB_STEP_SUMMARY

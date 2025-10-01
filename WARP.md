@@ -5,6 +5,7 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 ## Common Development Commands
 
 ### Development
+
 ```bash
 # Start development with hot reload
 npm run dev
@@ -21,6 +22,7 @@ npm run db:studio      # Open Drizzle Studio
 ```
 
 ### Production
+
 ```bash
 # Production Docker deployment
 npm run prod:docker
@@ -29,6 +31,7 @@ sh scripts/prod.sh
 ```
 
 ### Code Quality
+
 ```bash
 # Linting
 npm run lint           # Check for issues
@@ -40,6 +43,7 @@ npm run format:check   # Check formatting
 ```
 
 ### Docker Development Workflows
+
 ```bash
 # View logs
 docker-compose -f docker-compose.dev.yml logs -f app
@@ -59,6 +63,7 @@ docker-compose -f docker-compose.dev.yml up -d
 This is a Node.js Express API with a layered architecture:
 
 ### Tech Stack
+
 - **Runtime**: Node.js with ES Modules (`"type": "module"`)
 - **Framework**: Express.js with modern middleware stack
 - **Database**: Neon PostgreSQL with Drizzle ORM
@@ -69,7 +74,9 @@ This is a Node.js Express API with a layered architecture:
 - **Development**: Docker with Neon Local for ephemeral database branches
 
 ### Directory Structure & Import Aliases
+
 The project uses Node.js imports mapping for clean imports:
+
 - `#src/*` → `./src/*`
 - `#config/*` → `./src/config/*`
 - `#controllers/*` → `./src/controllers/*`
@@ -81,6 +88,7 @@ The project uses Node.js imports mapping for clean imports:
 - `#validations/*` → `./src/validations/*`
 
 ### Layered Architecture
+
 1. **Routes** (`src/routes/`) - Express route definitions
 2. **Controllers** (`src/controllers/`) - Request handling and response formatting
 3. **Services** (`src/services/`) - Business logic layer
@@ -91,9 +99,10 @@ The project uses Node.js imports mapping for clean imports:
 8. **Config** (`src/config/`) - Configuration modules (database, logger, Arcjet)
 
 ### Security Architecture
+
 - **Arcjet Security Middleware**: Applied globally with role-based rate limiting
   - Guest: 5 requests/minute
-  - User: 10 requests/minute  
+  - User: 10 requests/minute
   - Admin: 20 requests/minute
 - **Bot Detection**: Allows search engines and preview bots, blocks others
 - **Shield Protection**: SQL injection and attack prevention
@@ -101,17 +110,21 @@ The project uses Node.js imports mapping for clean imports:
 - **CORS**: Cross-origin resource sharing control
 
 ### Database Architecture
+
 - **Development**: Neon Local proxy creates ephemeral branches automatically
 - **Production**: Direct connection to Neon Cloud
 - **ORM**: Drizzle with PostgreSQL dialect
 - **Migrations**: Stored in `/drizzle` directory, managed via `drizzle-kit`
 
 ### Environment-Specific Behavior
+
 The application adapts based on `NODE_ENV`:
+
 - **Development**: Neon Local proxy configuration, console logging, verbose errors
 - **Production**: Direct Neon Cloud connection, file logging only, minimal error exposure
 
 ### Configuration Files
+
 - `drizzle.config.js` - Database schema and migration configuration
 - `eslint.config.js` - ESLint rules with ES2022 modules, 2-space indent, single quotes
 - `.prettierrc` - Code formatting rules
@@ -120,6 +133,7 @@ The application adapts based on `NODE_ENV`:
 - Multi-stage `Dockerfile` with development and production targets
 
 ### API Endpoints
+
 - `GET /` - Basic API greeting
 - `GET /health` - Health check with uptime
 - `GET /api` - API status endpoint
@@ -129,14 +143,18 @@ The application adapts based on `NODE_ENV`:
 - `/api/users/*` - User management endpoints
 
 ### Logging Strategy
+
 Winston logger with:
+
 - **Development**: Console output with colors + file logging
 - **Production**: File logging only (`logs/error.lg`, `logs/combined.log`)
 - **Structured**: JSON format with timestamps and error stacks
 - **HTTP Logging**: Morgan integration for request logging
 
 ### Environment Variables
+
 Key variables that affect application behavior:
+
 - `NODE_ENV` - Switches between development/production configurations
 - `DATABASE_URL` - Database connection (auto-configured in dev via Neon Local)
 - `ARCJET_KEY` - Required for security middleware
@@ -145,6 +163,7 @@ Key variables that affect application behavior:
 - `CORS_ORIGIN` - CORS allowed origins
 
 ### Development Workflow
+
 1. Use `npm run dev:docker` for full-stack development with fresh database branches
 2. Database schema changes: `npm run db:generate` → `npm run db:migrate`
 3. Code changes trigger automatic reloads in development container

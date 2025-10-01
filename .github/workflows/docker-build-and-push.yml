@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: ${{ github.repository }}/production-api-app
 
 jobs:
   docker:
@@ -69,7 +69,7 @@ jobs:
           echo "**Repository**: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Published Tags**:" >> $GITHUB_STEP_SUMMARY
-          
+
           # Parse and display tags in a formatted way
           TAGS="${{ steps.meta.outputs.tags }}"
           echo "$TAGS" | sed 's/,/\n/g' | while read -r tag; do
@@ -77,7 +77,7 @@ jobs:
               echo "- \`$tag\`" >> $GITHUB_STEP_SUMMARY
             fi
           done
-          
+
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Build Details**:" >> $GITHUB_STEP_SUMMARY
           echo "- **Platforms**: linux/amd64, linux/arm64" >> $GITHUB_STEP_SUMMARY
@@ -85,7 +85,7 @@ jobs:
           echo "- **Cache**: GitHub Actions cache enabled" >> $GITHUB_STEP_SUMMARY
           echo "- **Commit**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
-          
+
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Quick Start**:" >> $GITHUB_STEP_SUMMARY
           echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY

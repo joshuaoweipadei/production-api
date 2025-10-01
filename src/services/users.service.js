@@ -6,30 +6,34 @@ import bcrypt from 'bcrypt';
 
 export const getAllUsers = async () => {
   try {
-    return await db.select({
-      id: users.id,
-      email: users.email,
-      name: users.name,
-      role: users.role,
-      created_at: users.created_at,
-      updated_at: users.updated_at,
-    }).from(users);
+    return await db
+      .select({
+        id: users.id,
+        email: users.email,
+        name: users.name,
+        role: users.role,
+        created_at: users.created_at,
+        updated_at: users.updated_at,
+      })
+      .from(users);
   } catch (e) {
     logger.error('Error getting users', e);
     throw e;
   }
 };
 
-export const getUserById = async (id) => {
+export const getUserById = async id => {
   try {
-    const [user] = await db.select({
-      id: users.id,
-      email: users.email,
-      name: users.name,
-      role: users.role,
-      created_at: users.created_at,
-      updated_at: users.updated_at,
-    }).from(users)
+    const [user] = await db
+      .select({
+        id: users.id,
+        email: users.email,
+        name: users.name,
+        role: users.role,
+        created_at: users.created_at,
+        updated_at: users.updated_at,
+      })
+      .from(users)
       .where(eq(users.id, id))
       .limit(1);
 
@@ -65,7 +69,8 @@ export const updateUser = async (id, updates) => {
 
     // Check if email is unique (if being updated)
     if (updates.email && updates.email !== existingUser.email) {
-      const [emailExists] = await db.select()
+      const [emailExists] = await db
+        .select()
         .from(users)
         .where(eq(users.email, updates.email))
         .limit(1);
@@ -76,7 +81,8 @@ export const updateUser = async (id, updates) => {
     }
 
     // Update user
-    const [updatedUser] = await db.update(users)
+    const [updatedUser] = await db
+      .update(users)
       .set(updateData)
       .where(eq(users.id, id))
       .returning({
@@ -96,7 +102,7 @@ export const updateUser = async (id, updates) => {
   }
 };
 
-export const deleteUser = async (id) => {
+export const deleteUser = async id => {
   try {
     // Check if user exists
     const existingUser = await getUserById(id);
@@ -105,7 +111,8 @@ export const deleteUser = async (id) => {
     }
 
     // Delete user
-    const [deletedUser] = await db.delete(users)
+    const [deletedUser] = await db
+      .delete(users)
       .where(eq(users.id, id))
       .returning({
         id: users.id,
