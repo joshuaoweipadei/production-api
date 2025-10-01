@@ -1,4 +1,17 @@
 node_modules
 .idea
+
+# Environment files with secrets (don't commit)
 .env
 .env.*
+
+# But keep template files
+!.env.development
+!.env.production
+
+# Logs
+logs/*.log
+
+# Docker volumes
+production-api-*
+.neon_local/

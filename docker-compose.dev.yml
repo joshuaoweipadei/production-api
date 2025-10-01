@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  # Neon Local proxy service for development
+  neon-local:
+    image: neondatabase/neon_local:latest
+    container_name: production-api-neon-local
+    ports:
+      - '5432:5432'
+
+    env_file:
+      - .env.development
+    networks:
+      - production-api-network
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -h localhost -p 5432']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+  # Main application service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: production-api-dev
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env.development
+    volumes:
+      # Mount source code for hot reloading
+      - ./src:/app/src:ro
+      - ./package.json:/app/package.json:ro
+      - ./drizzle.config.js:/app/drizzle.config.js:ro
+      - ./drizzle:/app/drizzle:ro
+      # Mount logs directory for persistence
+      - ./logs:/app/logs
+    depends_on:
+      neon-local:
+        condition: service_healthy
+    networks:
+      - production-api-network
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'node', '-e', 'require("http").get("http://localhost:3000/health", (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  production-api-network:
+    driver: bridge
+
+volumes:
+  neon-local-data:
+    driver: local
