@@ -13,7 +13,7 @@ This guide explains how to run the Production API using Docker with Neon Databas
 
 ## Prerequisites
 
-- Docker Engine 20.10+ and Docker Compose v2
+- Docker Engine 20.10+ and Docker Compose v2 v2
 - Neon account with a project created
 - Basic understanding of Docker and environment variables
 
