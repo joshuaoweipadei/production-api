@@ -1,3 +1,4 @@
+
 name: Tests
 
 on:
@@ -15,33 +16,11 @@ jobs:
     name: Run Tests
     runs-on: ubuntu-latest
 
-    env:
-      NODE_ENV: test
-      NODE_OPTIONS: --experimental-vm-modules
-      DATABASE_URL: ${{ secrets.TEST_DATABASE_URL || 'postgresql://test:test@localhost:5432/test_production-api' }}
-      JWT_SECRET: test-secret-for-ci
-      LOG_LEVEL: error
-
-    services:
-      postgres:
-        image: postgres:15
-        env:
-          POSTGRES_USER: test
-          POSTGRES_PASSWORD: test
-          POSTGRES_DB: test_db
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 5432:5432
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js 20.x
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
@@ -50,69 +29,50 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Wait for PostgreSQL
-        run: |
-          until pg_isready -h localhost -p 5432 -U test; do
-            echo "Waiting for PostgreSQL to be ready..."
-            sleep 2
-          done
-
-      - name: Run database migrations
-        run: npm run db:migrate
-        env:
-          DATABASE_URL: postgresql://test:test@localhost:5432/test_db
-
       - name: Run tests
+        id: tests
         run: |
-          echo "::group::Running Tests"
-          if ! npm test; then
-            echo "::error::Tests failed"
-            echo "::notice::Check the test output above for details"
-            exit 1
-          fi
-          echo "::endgroup::"
+          echo "::notice::Running test suite..."
+          npm test
+        env:
+          NODE_ENV: test
+          NODE_OPTIONS: --experimental-vm-modules
+          DATABASE_URL: ${{ secrets.TEST_DATABASE_URL || 'postgresql://test:test@localhost:5432/test_production_api_dev' }}
+          JWT_SECRET: test-secret-for-ci
+          LOG_LEVEL: error
 
       - name: Upload coverage reports
-        uses: actions/upload-artifact@v4
         if: always()
+        uses: actions/upload-artifact@v4
         with:
           name: coverage-reports
-          path: coverage/
+          path: |
+            coverage/
+            test-results.xml
           retention-days: 30
+          if-no-files-found: warn
 
       - name: Generate test summary
         if: always()
         run: |
-          echo "### 🧪 Test Results" >> $GITHUB_STEP_SUMMARY
-
-          if [ -f coverage/lcov.info ]; then
+          echo "## Test Results 🧪" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.tests.outcome }}" == "success" ]; then
+            echo "✅ All tests passed successfully!" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
-            echo "**Coverage Report Generated**: ✅" >> $GITHUB_STEP_SUMMARY
-            
-            # Extract coverage percentage if available
-            if command -v lcov &> /dev/null && [ -f coverage/lcov.info ]; then
-              COVERAGE=$(lcov --summary coverage/lcov.info 2>/dev/null | grep "lines" | grep -o "[0-9.]*%" | tail -1 || echo "N/A")
-              echo "**Line Coverage**: $COVERAGE" >> $GITHUB_STEP_SUMMARY
-            fi
-            
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "📊 **Coverage artifacts uploaded for 30 days**" >> $GITHUB_STEP_SUMMARY
+            echo "### Coverage Status" >> $GITHUB_STEP_SUMMARY
+            echo "Coverage reports have been uploaded as artifacts and retained for 30 days." >> $GITHUB_STEP_SUMMARY
           else
+            echo "❌ Some tests failed. Please check the logs above for details." >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
-            echo "⚠️ **No coverage report generated**" >> $GITHUB_STEP_SUMMARY
+            echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
+            echo "1. Review the failing test output above" >> $GITHUB_STEP_SUMMARY
+            echo "2. Fix the failing tests locally" >> $GITHUB_STEP_SUMMARY
+            echo "3. Run \`npm test\` locally to verify fixes" >> $GITHUB_STEP_SUMMARY
+            echo "4. Commit and push your changes" >> $GITHUB_STEP_SUMMARY
           fi
-
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Test Environment:**" >> $GITHUB_STEP_SUMMARY
-          echo "- Node.js: $(node --version)" >> $GITHUB_STEP_SUMMARY
-          echo "- npm: $(npm --version)" >> $GITHUB_STEP_SUMMARY
-          echo "- PostgreSQL: Available for testing" >> $GITHUB_STEP_SUMMARY
 
       - name: Annotate test failures
         if: failure()
         run: |
-          echo "::error::Test suite failed. Please check the following:"
-          echo "::notice::1. Review test output above for specific failures"
-          echo "::notice::2. Ensure all tests pass locally: npm test"
-          echo "::notice::3. Check database connection and migrations"
-          echo "::notice::4. Verify environment variables are set correctly"
+          echo "::error::Test suite failed - please check the test output for specific failure details"
+          echo "::notice::Run 'npm test' locally to reproduce and debug the failing tests"
