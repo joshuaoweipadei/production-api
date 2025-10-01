@@ -1,0 +1,60 @@
+name: Lint and Format
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+  pull_request:
+    branches:
+      - main
+      - staging
+
+jobs:
+  lint-and-format:
+    name: Lint and Format Code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint
+        run: |
+          echo "::group::ESLint Check"
+          if ! npm run lint; then
+            echo "::error::ESLint found issues in your code."
+            echo "::notice::To fix automatically, run: npm run lint:fix"
+            echo "::endgroup::"
+            exit 1
+          fi
+          echo "::endgroup::"
+
+      - name: Check Prettier formatting
+        run: |
+          echo "::group::Prettier Format Check"
+          if ! npm run format:check; then
+            echo "::error::Code formatting issues detected."
+            echo "::notice::To fix automatically, run: npm run format"
+            echo "::endgroup::"
+            exit 1
+          fi
+          echo "::endgroup::"
+
+      - name: Summary
+        if: success()
+        run: |
+          echo "### ✅ Linting and Formatting Passed" >> $GITHUB_STEP_SUMMARY
+          echo "All code quality checks have passed successfully!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **ESLint**: No issues found" >> $GITHUB_STEP_SUMMARY
+          echo "- **Prettier**: All files properly formatted" >> $GITHUB_STEP_SUMMARY

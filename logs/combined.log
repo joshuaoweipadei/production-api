@@ -217,3 +217,327 @@
 {"level":"info","message":"::1 - - [01/Oct/2025:20:17:40 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [01/Oct/2025:20:18:10 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [01/Oct/2025:20:18:40 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:19:10 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:19:40 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:20:10 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:20:40 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:21:10 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:21:41 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:22:11 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:22:41 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:23:11 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:23:41 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:24:11 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:25:12 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:25:42 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:26:12 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:26:42 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:27:12 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:27:42 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:28:12 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:28:43 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:29:13 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:29:43 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:30:13 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:30:43 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:31:24 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello form production api","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:20:31:41 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users...","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:20:31:50 +0000] \"GET /api/users HTTP/1.1\" 200 359 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:31:54 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:32:24 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:32:54 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:33:24 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users...","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:20:33:30 +0000] \"GET /api/users HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:33:54 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:34:25 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:34:55 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:35:25 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:35:55 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:36:25 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:36:55 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:37:26 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:37:56 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:38:26 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:38:56 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:39:26 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:39:56 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:40:26 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:40:57 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:41:27 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:41:57 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:42:27 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:42:57 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:43:27 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:43:57 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:44:27 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:44:58 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:45:28 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:45:58 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:46:28 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:46:58 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:47:28 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:47:58 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:48:28 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:48:59 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:49:29 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:49:59 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:50:29 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:50:59 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:51:29 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:51:59 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:52:29 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:53:00 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:53:30 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:54:00 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:54:30 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:55:00 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:55:30 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:56:00 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:56:30 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:57:01 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:57:31 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:58:01 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:58:31 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:59:01 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:20:59:31 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:00:02 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:00:32 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:01:02 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:01:32 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:02:02 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:25:51 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:26:21 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:26:51 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:27:21 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:27:51 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:28:22 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:28:52 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:29:22 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:29:52 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:30:22 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:30:52 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:31:22 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:31:52 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:32:23 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:32:53 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:33:23 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:33:53 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:34:23 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:34:53 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:35:23 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:35:53 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:36:24 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:36:54 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:37:24 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:37:54 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:38:24 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:38:54 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:39:24 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:39:55 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:40:25 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:40:55 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:41:25 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:41:55 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:42:25 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:42:55 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:43:26 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:43:56 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:44:26 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:44:56 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:45:26 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:45:56 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:46:26 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:46:57 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:47:27 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:47:57 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:48:27 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:48:57 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:49:27 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:49:57 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:50:27 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:50:58 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:51:28 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:51:58 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:52:28 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:52:58 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:53:28 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:53:58 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:54:29 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:54:59 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:55:29 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:55:59 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:56:29 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:56:59 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:57:29 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:58:00 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:58:30 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:21:58:49 +0000] \"POST /api/users HTTP/1.1\" 401 55 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:59:00 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:21:59:00 +0000] \"POST /api/users/2 HTTP/1.1\" 401 55 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:21:59:30 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:00:00 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:00:30 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:01:00 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:01:31 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:02:01 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:02:31 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:03:01 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:03:31 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:04:01 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:04:23 +0000] \"POST /api/users/2 HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:04:31 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:04:52 +0000] \"POST /api/sign-in HTTP/1.1\" 404 151 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:05:02 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Error: User not found","service":"acquisitions-api"}
+{"level":"error","message":"Sign-in error User not found","service":"acquisitions-api","stack":"Error: User not found\n    at authenticateUser (file:///app/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signin (file:///app/src/controllers/auth.controller.js:65:18)"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:05:02 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 37 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Error: Invalid password","service":"acquisitions-api"}
+{"level":"error","message":"Sign-in error Invalid password","service":"acquisitions-api","stack":"Error: Invalid password\n    at authenticateUser (file:///app/src/services/auth.service.js:43:13)\n    at async signin (file:///app/src/controllers/auth.controller.js:65:18)"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:05:30 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 37 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:05:32 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/api/auth/sign-in","service":"acquisitions-api","userAgent":"HTTPie"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:05:37 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/api/auth/sign-in","service":"acquisitions-api","userAgent":"HTTPie"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:05:41 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:06:02 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"User nathan@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: nathan@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:06:19 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 102 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:06:32 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:06:42 +0000] \"POST /api/users HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:07:02 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///app/src/services/auth.service.js:66:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signup (file:///app/src/controllers/auth.controller.js:21:18)"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:07:03 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/api/auth/sign-up","service":"acquisitions-api","userAgent":"HTTPie"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:07:09 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/api/auth/sign-up","service":"acquisitions-api","userAgent":"HTTPie"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:07:23 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:07:32 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"-\"","service":"acquisitions-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/api/auth/sign-up","service":"acquisitions-api","userAgent":"HTTPie"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:07:39 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:08:02 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"User nathan1@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: nathan1@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:08:14 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 103 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:08:33 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:09:03 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:09:33 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:10:03 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:10:33 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:10:36 +0000] \"POST /api/users HTTP/1.1\" 404 149 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"warn","message":"Access denied for user nathan1@gmail.com with role user. Required: admin","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:10:45 +0000] \"GET /api/users HTTP/1.1\" 403 62 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user by ID: 2","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:10:55 +0000] \"GET /api/users/2 HTTP/1.1\" 200 195 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:11:03 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:11:09 +0000] \"DELETE /api/users/2 HTTP/1.1\" 403 70 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:11:33 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:12:04 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:12:34 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:13:04 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:13:07 +0000] \"DELETE /api/users HTTP/1.1\" 404 151 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"warn","message":"Access denied for user nathan1@gmail.com with role user. Required: admin","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:13:14 +0000] \"GET /api/users HTTP/1.1\" 403 62 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:13:34 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users...","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:13:51 +0000] \"GET /api/users HTTP/1.1\" 200 652 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:14:04 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:14:34 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:15:04 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:15:35 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:16:05 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:16:35 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:17:35 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:18:05 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:18:35 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:19:06 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:19:36 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:20:06 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user by ID: 4","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:20:15 +0000] \"GET /api/users/4 HTTP/1.1\" 200 195 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"warn","message":"Access denied for user nathan1@gmail.com with role user. Required: admin","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:20:24 +0000] \"DELETE /api/users/4 HTTP/1.1\" 403 62 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:20:36 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"Deleting user ID: 4","service":"acquisitions-api"}
+{"level":"info","message":"User 4 deleted successfully","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:20:38 +0000] \"DELETE /api/users/4 HTTP/1.1\" 200 113 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:21:06 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:21:36 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:22:06 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:22:37 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:23:07 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:23:37 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:24:07 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:24:37 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:25:07 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:25:38 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:26:08 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:26:38 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:27:08 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:27:38 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:28:08 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:28:38 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:29:08 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:29:39 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:30:09 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:37:40 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:38:10 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:38:41 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:39:11 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Oct/2025:22:39:18 +0000] \"GET /health HTTP/1.1\" 200 73 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Oct/2025:22:39:18 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Oct/2025:22:39:18 +0000] \"GET /nonexsistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:39:41 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:40:11 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:40:41 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [01/Oct/2025:22:41:10 +0000] \"GET /coverage/lcov-report/index.html HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:41:11 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:41:42 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:42:12 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:42:42 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:43:12 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:43:42 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:44:12 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:44:42 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:45:13 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:45:43 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:46:13 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:46:43 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:47:13 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:47:43 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:48:13 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:48:43 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:49:14 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:49:44 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:50:14 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:50:44 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:51:14 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:51:44 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:52:14 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:52:45 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:53:15 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:53:45 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:54:15 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:54:45 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:55:15 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:55:46 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:56:16 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:56:46 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:57:16 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:57:46 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:58:16 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:58:46 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:59:17 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:22:59:47 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:23:00:17 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:23:00:47 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:23:01:17 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:23:01:47 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:23:02:17 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:23:02:48 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api"}
