@@ -1,0 +1,29 @@
+{"level":"info","message":"Hello form production api","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:02:28:57 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello form production api","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:06:38:46 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:06:38:56 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:06:40:17 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:06:40:23 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello form production api","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:07:08:12 +0000] \"GET / HTTP/1.1\" 200 20 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:07:08:51 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:07:08:55 +0000] \"GET /api/auth/sign-in HTTP/1.1\" 404 155 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:07:09:01 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:07:29:12 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User oweipadei@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: oweipadei@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:07:41:32 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 106 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///Users/diamondjoshua/Documents/Coding/DevOps/production-api/src/services/auth.service.js:25:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signup (file:///Users/diamondjoshua/Documents/Coding/DevOps/production-api/src/controllers/auth.controller.js:21:18)"}
+{"level":"info","message":"::1 - - [29/Sep/2025:07:42:21 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User oweipad@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: oweipad@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [29/Sep/2025:07:42:26 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 103 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello form production api","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:17:33:15 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"User oweipad@gmail.com authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: oweipad@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:17:34:03 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 115 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Oct/2025:17:34:29 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"acquisitions-api"}
