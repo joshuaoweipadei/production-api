@@ -2,4 +2,4 @@
 
 ## Docker build fixing
 
-### Created repo in docker hub
+### Created repo in docker.hub
